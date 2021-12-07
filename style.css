@@ -36,8 +36,9 @@ header{
     font-size: max(60px, 10vw);
    text-shadow: rgb(3, 27, 248) 0px 0px 20px ;
    animation-name: shadow;
-   animation: shadow 10s  infinite;
-   
+   animation: shadow;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
    
    
  
@@ -73,6 +74,7 @@ section{
     height: 100vh;
     background-color: rgb(43, 32, 61);
     text-align: center;
+    padding: 5vw;
 }
 
 .format-sec{
@@ -117,6 +119,7 @@ section{
            }
            
            p{
+               display: inline-block;
                color: white;
                font-size: max(20px, 5vw);
                text-shadow: rgb(0, 0, 0) 2px 2px 3px;
