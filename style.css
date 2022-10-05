@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 body{
-    background-color: rgb(22, 23, 56);
+    background-color: rgb(15, 12, 43);
 }
 
 header{
@@ -48,13 +49,13 @@ header{
         text-shadow: rgb(3, 27, 248) 0px 0px 20px ;
       }
       25% {
-        text-shadow: rgb(39, 145, 44) 0px 0px 20px ;
+        text-shadow: rgb(8, 250, 21) 0px 0px 20px ;
       }
       50% {
         text-shadow: rgb(248, 3, 15) 0px 0px 20px ;
       }
       75%{
-        text-shadow: rgb(39, 145, 44) 0px 0px 20px ;
+        text-shadow: rgb(5, 243, 17) 0px 0px 20px ;
       }
       100%{
         text-shadow: rgb(3, 27, 248) 0px 0px 20px ;
@@ -74,7 +75,7 @@ section{
     height: 100vh;
     background-color: rgb(43, 32, 61);
     text-align: center;
-    padding: 5vw;
+    padding: 30px;
 }
 
 .format-sec{
@@ -123,8 +124,47 @@ section{
                color: white;
                font-size: max(20px, 5vw);
                text-shadow: rgb(0, 0, 0) 2px 2px 3px;
+               
            }
 
+           #mapa{
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 30px 10px;
+            align-items: center;
+            justify-content: center;
+           }
+
+           iframe{
+            max-width: 1000px;
+            height: 450px;
+            border-radius: 5px;
+           }
+
+           /*Animação JS*/
+
+           [data-anima]{
+            opacity: 0;
+            transition: .8s;
+           }
+
+           [data-anima="esquerda"]{
+           transform: translate3d(-50px, 0, 0);
+            }
+
+            [data-anima="direita"]{
+                transform: translate3d(50px, 0, 0);
+            }
+
+            [data-anima="centro"]{
+                transform: translate3d(0, 50px, 0);
+            }     
+
+            [data-anima].animacao{
+                opacity: 1;
+                transform: translate3d(0,0,0);
+            }
   
          
         
