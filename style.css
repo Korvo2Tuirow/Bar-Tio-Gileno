@@ -186,11 +186,24 @@ section{
                 }
 
                 #mapa iframe{
-                    width: 500px;
+                    width: 450px;
                     margin-bottom: 30px;
                     height: 500px;
                 }
               
             }
         
+            @media(max-width:530px){
+                #mapa iframe{
+                    width: 300px;
+                    margin-bottom: 30px;
+                    height: 500px;
+                    padding: 0;
+                }
+
+                .fb-page{
+                    display: none;
+                   max-width: 300px;
+                }
+            }
            
