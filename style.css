@@ -137,9 +137,11 @@ section{
            }
 
            iframe{
-            max-width: 1000px;
-            height: 450px;
+            display: flex;
+            max-width: 800px;
+            height: 500px;
             border-radius: 5px;
+            margin-left: 30px;
            }
 
            /*Animação JS*/
@@ -166,6 +168,29 @@ section{
                 transform: translate3d(0,0,0);
             }
   
+
+            .fb--page{
+                
+                max-width: 600px;
+                display: flex;
+                height: auto;
+                margin: auto;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 0px ;
+            }
          
+            @media (max-width:998px){
+                #mapa{
+                    flex-direction: column-reverse;
+                }
+
+                #mapa iframe{
+                    width: 500px;
+                    margin-bottom: 30px;
+                    height: 500px;
+                }
+              
+            }
         
            
