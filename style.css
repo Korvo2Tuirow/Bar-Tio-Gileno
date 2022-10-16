@@ -180,30 +180,29 @@ section{
                 padding: 30px 0px ;
             }
          
-            @media (max-width:998px){
+            @media (max-width:499px){
                 #mapa{
                     flex-direction: column-reverse;
+                    margin: 0;
+                    padding: 0;
                 }
 
-                #mapa iframe{
-                    width: 450px;
-                    margin-bottom: 30px;
-                    height: 500px;
-                }
-              
-            }
-        
-            @media(max-width:530px){
                 #mapa iframe{
                     width: 300px;
                     margin-bottom: 30px;
                     height: 500px;
+                    margin: 30px 0px;
                     padding: 0;
+                    
                 }
-
-                .fb-page{
-                    display: none;
-                   max-width: 300px;
-                }
+              
             }
-           
+        
+           @media(max-width:690px) and (orientation:landscape){
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 20px;
+            }
+           } 
